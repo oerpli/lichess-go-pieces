@@ -1,30 +1,29 @@
 // ==UserScript==
 // @name          Lichess Pieces: Go
 // @namespace     http://userstyles.org
-// @description	  Go stones instead of chess pieces. Choose CANVAS board theme to activate the style.
-// @author        oerpli
-// @homepage      https://userstyles.org/styles/135471
+// @description	  Changes all chess pieces to Go stones of their respective color. This enables playing in a semi-blind mode.
+// @author        Abraham Hinteregger
+// @homepage      https://userstyles.org/styles/156409
 // @include       http://lichess.org/*
 // @include       https://lichess.org/*
 // @include       http://*.lichess.org/*
 // @include       https://*.lichess.org/*
 // @run-at        document-start
-// @version       0.9
+// @version       0.20180301104942
 // ==/UserScript==
 (function() {var css = [
-	"piece.pawn.black { background-image: url(\"https://svgshare.com/i/5gv.svg\")!important;} ",
-	"	piece.knight.black { background-image: url(\"https://svgshare.com/i/5gv.svg\")!important;} ",
-	"	piece.bishop.black { background-image: url(\"https://svgshare.com/i/5gv.svg\")!important;} ",
-	"	piece.rook.black { background-image: url(\"https://svgshare.com/i/5gv.svg\")!important;} ",
-	"	piece.queen.black { background-image: url(\"https://svgshare.com/i/5gv.svg\")!important;} ",
-	"	piece.king.black { background-image: url(\"https://svgshare.com/i/5gv.svg\")!important;} ",
-	"",
-	"	piece.pawn.white { background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;} ",
-	"	piece.knight.white { background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;} ",
-	"	piece.bishop.white { background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;} ",
-	"	piece.rook.white { background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;} ",
-	"	piece.queen.white { background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;} ",
-	"	piece.king.white { background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;}"
+	"	piece.pawn.black{background-image: url(\"https://svgshare.com/i/5gv.svg\")!important;}",
+	"  	piece.knight.black{background-image: url(\"https://svgshare.com/i/5gv.svg\")!important;}",
+	"  	piece.bishop.black{background-image: url(\"https://svgshare.com/i/5gv.svg\")!important;}",
+	"  	piece.rook.black{background-image: url(\"https://svgshare.com/i/5gv.svg\")!important;}",
+	"  	piece.queen.black{background-image: url(\"https://svgshare.com/i/5gv.svg\")!important;}",
+	"  	piece.king.black{background-image: url(\"https://svgshare.com/i/5gv.svg\")!important;}",
+	"  	piece.pawn.white{background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;}",
+	"  	piece.knight.white{background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;}",
+	"  	piece.bishop.white{background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;}",
+	"  	piece.rook.white{background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;}",
+	"  	piece.queen.white{background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;}",
+	"  	piece.king.white{background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;}"
 ].join("\n");
 if (typeof GM_addStyle != "undefined") {
 	GM_addStyle(css);
