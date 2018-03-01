@@ -24,13 +24,7 @@
 	"	piece.bishop.white { background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;} ",
 	"	piece.rook.white { background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;} ",
 	"	piece.queen.white { background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;} ",
-	"	piece.king.white { background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;}",
-	"",
-	"",
-	".cg-square.last-move { background-color:rgba(255, 255, 0, 0.41) !important;} ",
-	".canvas .is2d .cg-board, #top div.color_demo.canvas{",
-	"background-image: url(http://s018.radikal.ru/i508/1611/ae/e805b6954066.png) ;",
-	"}"
+	"	piece.king.white { background-image: url(\"https://svgshare.com/i/5ih.svg\")!important;}"
 ].join("\n");
 if (typeof GM_addStyle != "undefined") {
 	GM_addStyle(css);
