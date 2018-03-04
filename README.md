@@ -1,5 +1,9 @@
 # lichess-go-pieces
-CSS, JS and SVGs for a lichess userstyle/userscript that changes the pieces to go stones ("semi-blind mode")
+CSS, JS and SVGs for a lichess userstyle/userscript that changes the pieces to go stones ("semi-blind mode").
+
+The result will look like this:
+
+![Example image](https://raw.githubusercontent.com/oerpli/lichess-go-pieces/master/gochess.PNG)
 
 ## History
 
@@ -11,7 +15,12 @@ Initially developed as [pull-request](https://github.com/ornicar/lila/pull/4059)
 
 So here goes:
 
+## Installation
+
 * [Userstyle](https://userstyles.org/styles/156409/lichess-pieces-go) (CSS only, use Stylish [FF](https://addons.mozilla.org/en-US/firefox/addon/stylish/)/[Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en))
 * [Userscript](https://greasyfork.org/en/scripts/38979-lichess-pieces-go) (Only injects CSS, use Greasemonkey or Tampermonkey [FF](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)/[Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
 
 The userscript version is auto generated from the userstyle does basically the same thing (inject the `.user.css`  into the DOM. 
+
+## Usage
+Enable/disable the userstyle/script when you're on lichess.org. Can only be used with the 2D board designs. 
